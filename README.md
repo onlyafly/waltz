@@ -87,6 +87,28 @@ Here's an example using waltz, crate, jayq, and fetch:
 * Update .gitignore
 * Document code
 
+## Running unit tests
+
+### Option 1: Run in browser
+
+1. Compile the library and tests:
+
+    $ lein cljsbuild once
+    or
+    $ lein compile
+    
+2. Open testsuite.html in your browser of choice.
+
+### Option 2: Run using PhantomJS
+
+1. Install PhantomJS. See http://phantomjs.org/
+
+2. Run the tests
+
+    $ lein cljsbuild test
+    or
+    $ lein test
+
 ## License
 
 Copyright (C) 2011 Chris Granger
