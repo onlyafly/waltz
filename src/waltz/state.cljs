@@ -26,11 +26,11 @@
          :states {}
          :events {}}))
 
-(defn get-name [sm]
-  (get-in-sm sm [:name]))
-
 (defn get-in-sm [sm ks]
   (get-in @sm ks))
+
+(defn get-name [sm]
+  (get-in-sm sm [:name]))
 
 (defn assoc-sm [sm ks v]
   (swap! sm #(assoc-in % ks v)))
@@ -106,4 +106,4 @@
         (debug-log sm "(trans " (str trans) ") -> " (boolean res) " :: context " (pr-str context))))))
 
 (defn set-debug [sm dbg]
-  (assoc-sm sm :debug dbg))
+  (assoc-sm sm [:debug] dbg))
