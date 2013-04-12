@@ -1,7 +1,17 @@
 # waltz
 
-Waltz is a ClojureScript library that helps manage state in client-side applications using
-non-deterministic finite state machines.
+Waltz is a ClojureScript library that helps manage state in
+client-side applications using non-deterministic finite state
+machines.
+
+(Note: I forked this from the original repo at
+https://github.com/ibdknox/waltz since it was no longer being updated.)
+
+## Installation
+
+Add the following dependency to your `project.clj` file:
+
+    [onlyafly/waltz "0.1.0-alpha2"]
 
 ## Usage
 
@@ -65,6 +75,17 @@ Here's an example using waltz, crate, jayq, and fetch:
 (add-metric {:label "Signups today" :delay 30000 :klass "gray big"})
 (add-metric {:label "Signups today" :delay 30000 :klass "gray big"})
 ```
+
+## Todo
+
+* New examples in README:
+  * Simpler example
+  * More full-featured example
+* Document entire API
+* Improve test suite (or remove the non-functioning one)
+* Update to new version of Clojure
+* Update .gitignore
+* Document code
 
 ## License
 
