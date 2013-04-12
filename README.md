@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/onlyafly/waltz.png?branch=master)](https://travis-ci.org/onlyafly/waltz)
+
 # waltz
 
 Waltz is a ClojureScript library that helps manage state in
@@ -93,9 +95,11 @@ Here's an example using waltz, crate, jayq, and fetch:
 
 1. Compile the library and tests:
 
+    ```
     $ lein cljsbuild once
     or
     $ lein compile
+    ```
     
 2. Open testsuite.html in your browser of choice.
 
@@ -105,9 +109,11 @@ Here's an example using waltz, crate, jayq, and fetch:
 
 2. Run the tests
 
+    ```
     $ lein cljsbuild test
     or
     $ lein test
+    ```
 
 ## License
 
