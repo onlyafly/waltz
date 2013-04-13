@@ -7,7 +7,8 @@ client-side applications using non-deterministic finite state
 machines.
 
 (Note: I forked this from the original repo at
-https://github.com/ibdknox/waltz since it was no longer being updated.)
+https://github.com/ibdknox/waltz since it was no longer being updated.
+--Kevin Albrecht)
 
 ## Installation
 
@@ -78,18 +79,7 @@ Here's an example using waltz, crate, jayq, and fetch:
 (add-metric {:label "Signups today" :delay 30000 :klass "gray big"})
 ```
 
-## Todo
-
-* New examples in README:
-  * Simpler example
-  * More full-featured example
-* Document entire API
-* Improve test suite (or remove the non-functioning one)
-* Update to new version of Clojure
-* Update .gitignore
-* Document code
-
-## Running unit tests
+## Running Unit Tests
 
 ### Option 1: Run in browser
 
@@ -115,7 +105,29 @@ Here's an example using waltz, crate, jayq, and fetch:
     $ lein test
     ```
 
+## Todo
+
+* New examples in README:
+  * Simpler example
+  * More full-featured example
+* Document entire API
+* Add unit tests
+* Document code
+
+## Version History
+
+0.1.0-alpha2
+* Forked from https://github.com/ibdknox/waltz
+* Fixed bugs in state.cljs
+* Added unit test suite
+
+0.1.1
+* Fixed debugging logs to reflect that transitions have been renamed
+  to events.
+
 ## License
+
+Portions copyright (C) 2013 Kevin Albrecht
 
 Copyright (C) 2011 Chris Granger
 

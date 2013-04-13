@@ -1,4 +1,4 @@
-(defproject onlyafly/waltz "0.1.0-alpha2"
+(defproject onlyafly/waltz "0.1.1"
   :description "A ClojureScript library to keep your state in step"
   :url "http://github.com/onlyafly/waltz"
   :license {:name "Eclipse Public License"
@@ -13,4 +13,3 @@
               :test-commands {"unit" ["phantomjs" "target/unit-test.js"]}}
   :plugins [[lein-cljsbuild "0.3.0"]]
   :hooks [leiningen.cljsbuild])
-
