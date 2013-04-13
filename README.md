@@ -14,7 +14,7 @@ https://github.com/ibdknox/waltz since it was no longer being updated.
 
 Add the following dependency to your `project.clj` file:
 
-    [onlyafly/waltz "0.1.0-alpha2"]
+    [onlyafly/waltz "0.1.1"]
 
 ## Usage
 
