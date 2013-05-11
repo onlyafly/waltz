@@ -1,4 +1,4 @@
-(defproject onlyafly/waltz "0.1.1"
+(defproject onlyafly/waltz "0.1.2"
   :description "A ClojureScript library to keep your state in step"
   :url "http://github.com/onlyafly/waltz"
   :license {:name "Eclipse Public License"

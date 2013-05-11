@@ -14,7 +14,7 @@ https://github.com/ibdknox/waltz since it was no longer being updated.
 
 Add the following dependency to your `project.clj` file:
 
-    [onlyafly/waltz "0.1.1"]
+    [onlyafly/waltz "0.1.2"]
 
 ## Usage
 
@@ -124,6 +124,10 @@ Here's an example using waltz, crate, jayq, and fetch:
 0.1.1
 * Fixed debugging logs to reflect that transitions have been renamed
   to events.
+  
+0.1.2
+* Improved debugging logs to show the context being passed into
+  defstate 'in' and 'out' functions.
 
 ## License
 

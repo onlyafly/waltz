@@ -109,7 +109,7 @@
         (update-sm sm [:current] conj state)
         (debug-log sm "(set " (str state) ") -> " (pr-str (current sm))) 
         (when (seq cur-in)
-          (debug-log sm "(in " (str state) ")")
+          (debug-log sm "(in " (str state) ") :: context " (pr-str context))
           (doseq [func cur-in]
             (apply func context))))))
   sm)
@@ -124,7 +124,7 @@
         (update-sm sm [:current] disj state)
         (debug-log sm "(unset " (str state ")") " -> " (pr-str (current sm)))
         (when (seq cur-out)
-          (debug-log sm "(out " (str state) ")")
+          (debug-log sm "(out " (str state) ") :: context " (pr-str context))
           (doseq [func cur-out]
             (apply func context))))))
   sm)
